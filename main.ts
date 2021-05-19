@@ -1,9 +1,9 @@
-scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile6`, function (sprite, location) {
-    tiles.setTilemap(tilemap`level2`)
-    mySprite.setPosition(43, 17)
-})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile7`, function (sprite, location) {
     info.changeLifeBy(-1)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile9`, function (sprite, location) {
+    tiles.setTilemap(tilemap`level2`)
+    mySprite.setPosition(43, 17)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sprite, location) {
     game.over(true)
